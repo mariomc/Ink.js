@@ -83,7 +83,7 @@ var options = ' -b',
 
 // If we have the minified flag, minify the bundling instead of beautifying it
 if(minify){
-    options = ' -e document,window:document,window -c -m toplevel=true,eval=true ';
+    options = ' -e document,window:document,window -c -m eval=true ';
 }
 
 command = 'uglifyjs ' + filesToBundle.join(' ') + options + ' -o ' + bundleFile;
